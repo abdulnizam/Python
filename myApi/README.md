@@ -9,9 +9,9 @@ To active the environment
 
 python3 -m venv "env name"
 
- // source env/bin/activate
+    source env/bin/activate
 
 To deactive the environment
 
-// deactivate
+    deactivate
 
