@@ -7,7 +7,7 @@ use env to locate all dependency of the pip
 
 To active the environment
 
-python3 -m venv "env name"
+    python3 -m venv "env name"
 
     source env/bin/activate
 
