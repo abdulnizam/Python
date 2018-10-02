@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  web:
+    build: .
+    command: python myApi/manage.py runserver 0.0.0.0:8002
+    volumes:
+      - .:/code
+    ports:
+      - "8002:80"

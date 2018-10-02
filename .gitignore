@@ -2,3 +2,9 @@
 myApi/env/*
 Programs/.env
 Programs/env/*
+carApi/carApi/carApi/__pycache__/*
+carApi/env/*
+myApi/myApi/api/__pycache__/*
+myApi/myApi/myApi/__pycache__/*
+myApi/myApi/myApi/__pycache__/*
+*.pyc
