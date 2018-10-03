@@ -8,3 +8,4 @@ myApi/myApi/api/__pycache__/*
 myApi/myApi/myApi/__pycache__/*
 myApi/myApi/myApi/__pycache__/*
 *.pyc
+bookApi/env/*
