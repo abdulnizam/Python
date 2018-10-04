@@ -27,63 +27,45 @@ class Solution:
 		# priorities.sort()
 
 		# return priorities
-		
-
+		filtered = []
+		unfiltered = []
+		previous_val = 0;
 
 		for x in range(0, nr_movies):
 
-			previous_val = '';
 
 			sorted_list.append(start_times_list[x])
 
 			current_val = start_times_list[x]
+			print(previous_val)
+			if current_val != previous_val:
 
-			# future_val = start_times_list[x+(0 if x+1 == nr_movies else 1)]
+				# future_val = start_times_list[x+(0 if x+1 == nr_movies else 1)]
 
-			future_val = start_times_list[x+[1, 0][x+1 == nr_movies]]
+				# future_val = start_times_list[x+[1, 0][x+1 == nr_movies]]
 
-			diff = future_val - current_val
-
-			if diff >= 2:
-				print(current_val)
-
-			# print(str(current_val)+'cc')
-			# print(str(future_val)+'ff')
+				future_val = start_times_list[x+[1, 0][x+1 == nr_movies]]
 
 
-			previous_val = current_val
+				diff = current_val - previous_val
 
+				future_diff = current_val - future_val
+
+				previous_val = current_val
+
+				if diff >= 2:
+					if future_diff >= 2:
+						filtered.append(current_val)
+					else:
+						if priorities_time_list[current_val] > priorities_time_list[future_val]:
+							filtered.append(current_val)
+						else:
+							filtered.append(future_val)
+
+							previous_val = future_val
 			
-			# add = 1
-			# if x == nr_movies:
-			# 	return movies_list_hour
 			
-			# if x+1 == nr_movies:
-			# 	add = 0 
-
-			# if x != 0:
-			# 	movies_list_hour += ','
-
-			# val = start_times_list[x+add] - start_times_list[x] 
-
-			# if val <= 0:
-			# 	movies_list_hour += str(start_times_list[x] )
-
-			# if priorities_time_list[start_times_list[x]] >
-
-
-			
-			# if start_times_list[x]+2 > start_times_list[x+add]:
-			# 	# list_set.append( start_time_list[x] )
-			# 	movies_list_hour += str(start_times_list[x] )
-
-			# movies_list_hour += str(x)
-
-
-
-
-			
-		return sorted_list
+		return filtered
 
 
 
