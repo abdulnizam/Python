@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 class Solution:
 
 	def __new__(self, nr_movies, priorities, start_times):

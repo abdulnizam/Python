@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import environ
 
 env = environ.Env()
