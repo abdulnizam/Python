@@ -8,18 +8,19 @@ import requests
 import json
 import sys
 
+
 def generate_password(length: int, complexity: int) -> str:
     password = ''
-    switcher = {
-        1: "",
-        2: "0123456789",
-        3: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-        4: "[ !#$%&'()*+,-./[\\\]^_`{|}~",
-    }
-    chars = 'abcdefghijklmnopqrstuvwxyz' + switcher.get(complexity)
 
-    for x in range(length):
-        password += random.choice(chars)
+    word_list = list(string.ascii_lowercase)
+    if complexity == 2:
+        word_list.extend(string.digits)
+    elif complexity == 3:
+        word_list.extend(string.ascii_uppercase)
+    elif complexity == 4:
+        word_list.extend(string.punctuation)
+
+    password = "".join([random.choice(word_list) for i in range(length)])
     return password
 
 
