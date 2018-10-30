@@ -10,7 +10,7 @@ import sqlite3
 # sys.path.append(dir_path + '/lib')
 from core import *
 from sql import *
-conn = sqlite3.connect('../nexus.db')
+conn = sqlite3.connect('nexus.db')
 
 
 class NexuscodeTest(unittest.TestCase):
