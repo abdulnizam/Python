@@ -26,15 +26,15 @@ Folder Structure
     
  cd PROJECT_FOLDER
  
-# Step to run 
+## Step to run 
   1. pip install -r requirements.txt
   2. Run python3 index.py 
-# Step to run unit test
+## Step to run unit test
   1. python3 runTests.py
 
-# Database - Sqlite3 
+## Database - Sqlite3 
   
- # Explanations 
+## Explanations 
   1. The structure indicates how it organized the code by modules.
     a. core.py has all set of core method to use in the main module.
     b. sql.py has all sql method to use to create, update informations.
