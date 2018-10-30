@@ -13,16 +13,16 @@ If you use any third-party library you must provide a requirements.txt file.
 
 ## Solutions
 Folder Structure
-  PROJECT_FOLDER
-    - lib
-      - core.py
-      - sql.py
-    - tests
-      - passwordTest.py
-      - coreTest.py
-    - index.py
-    - runTests.py
-    - requirement.txt
+    PROJECT_FOLDER
+      - lib
+        - core.py
+        - sql.py
+      - tests
+        - passwordTest.py
+        - coreTest.py
+      - index.py
+      - runTests.py
+      - requirement.txt
     
  cd PROJECT_FOLDER
  
