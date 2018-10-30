@@ -13,6 +13,7 @@ If you use any third-party library you must provide a requirements.txt file.
 
 ## Solutions
 Folder Structure
+
     PROJECT_FOLDER
       - lib
         - core.py
