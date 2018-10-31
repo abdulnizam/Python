@@ -26,7 +26,7 @@ def create_users(count: int):
         create_new_users(conn, fetch_users)
 
 
-def select_all_users():
+def select_all_users() -> list:
     users = select_table(conn)
     return users
 
