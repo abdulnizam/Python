@@ -12,3 +12,5 @@ bookApi/env/*
 
 monolithApp/env/*
 myApi/myApi/myApi/__pycache__/*
+*.py
+ve/*

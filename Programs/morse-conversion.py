@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-CODE = {'A': '.-',     'B': '-...',   'C': '-.-.', 
+CODE = {'A': '.-',     'B': '-...',   'C': '-.-.',
         'D': '-..',    'E': '.',      'F': '..-.',
         'G': '--.',    'H': '....',   'I': '..',
         'J': '.---',   'K': '-.-',    'L': '.-..',
@@ -32,7 +32,7 @@ class Solution:
                 if flag:
                         return ''.join(CODE_REVERSED.get(i) for i in value.split())
                 else:
-                        return ' '.join(CODE.get(i.upper()) for i in value) 
+                        return ' '.join(CODE.get(i.upper()) for i in value)
 
 if __name__ == '__main__':
         # false to convert from string to morse
