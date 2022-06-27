@@ -1,6 +1,6 @@
 # for .env
 python-dotenv
-mysql-connector-python==8.0.11
+mysql-connector-python==8.0.14
 
 # for .env
 django-environ 
